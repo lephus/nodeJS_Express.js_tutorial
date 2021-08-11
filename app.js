@@ -1,11 +1,8 @@
-// Modules
-const john = "john"
-const peter = "peter"
+const { readFile, readFileSync, writeFileSync } = require('fs')
 
- const sayHi = (name) => {
-     console.log(`Hello, my name is ${name}`);
- }
+const first = readFileSync('./content/first.txt', 'utf8')
+const second = readFileSync('./content/second.txt', 'utf8')
 
- sayHi("HuuPhu")
- sayHi(john)
- sayHi(peter)
+writeFileSync('./content/result-sync.txt', 
+                `Here is the result: ${first}, ${second}`            
+)
