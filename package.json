@@ -1,0 +1,24 @@
+{
+  "name": "node_tutorial",
+  "version": "1.0.0",
+  "description": "If you find my code useful or give you more knowledge - experience, please make sure you want to buy me a coffee : \r + ID/ mã tài khoản: 0041000370790\r + bank            : Vietcombank\r + userName        : Le Huu Phu\r => Email          : phulealali@gmail.com\r => Phone          : 0328814589",
+  "main": "10_fs-sync.js",
+  "scripts": {
+    "start": "npm app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lephus/nodeJS_Express.js_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lephus/nodeJS_Express.js_tutorial/issues"
+  },
+  "homepage": "https://github.com/lephus/nodeJS_Express.js_tutorial#readme",
+  "dependencies": {
+    "nodemo": "^1.0.0"
+  }
+}
