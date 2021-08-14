@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { products } = require('./data')
+const { products } = require('../data')
 
 app.get('/', (req, res) => {
   res.send('<h1> Home Page</h1><a href="/api/products">products</a>')
@@ -29,11 +29,13 @@ app.get('/api/products/:productID', (req, res) => {
 })
 
 app.get('/api/products/:productID/reviews/:reviewID', (req, res) => {
+  // api/products/4/reviews/abc
   console.log(req.params)
   res.send('hello world')
 })
 
 app.get('/api/v1/query', (req, res) => {
+  // api/v1/query?search=abc&limit=1000
   // console.log(req.query)
   const { search, limit } = req.query
   let sortedProducts = [...products]

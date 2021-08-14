@@ -8,7 +8,11 @@ const logger = (req, res, next) => {
   const url = req.url
   const time = new Date().getFullYear()
   console.log(method, url, time)
-  next()
+  if(url === '/about'){
+        res.send("Please login to continue")
+  }else{
+        next()
+  }
 }
 
 app.get('/', logger, (req, res) => {
